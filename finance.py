@@ -8,7 +8,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-df=pd.read_excel(r"C:\\Users\PC\\Downloads\\Product-Sales-Region.xlsx")
+df=pd.read_excel(Product-Sales-Region.xlsx")
 st.write(df.head())
 fig = px.pie(
     df,
