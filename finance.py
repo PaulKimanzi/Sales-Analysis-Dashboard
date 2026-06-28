@@ -13,7 +13,7 @@ df["Month"] = pd.to_datetime(df["OrderDate"]).dt.strftime("%b")
 st.write(df.head())
 #Create a Pie chart of Sales by Product Category
 fig = px.pie(df, names="Product", values="Quantity", title="Sales by Category",
-    hole=0.3  #to create a donut chart)
+    hole=0.3  )
 fig2 = px.line(trend,x="Month",y="Sales",markers=True,title="Monthly Sales Trend")
 
 #render the charts into the Streamlit Layout
