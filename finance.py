@@ -8,7 +8,7 @@ df=pd.read_excel("Product-Sales-Region.xlsx")
 
 #Add calculated colums into the dataframe
 df["OrderDate"] = pd.to_datetime(df["OrderDate"])
-df["Month"][3:]=df["OrderDate"].dt.month_name()
+df["Month"][3:]=df["OrderDate"].dt.month_name().calendar.month_abbr[x]
 
 #Exploratory Data Analysis
 st.write(df.head())
