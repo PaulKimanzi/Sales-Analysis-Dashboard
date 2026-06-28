@@ -14,8 +14,8 @@ st.write(df.head())
 #Create a Pie chart of Sales by Product Category
 fig = px.pie(df, names="Product", values="Quantity", title="Sales by Category",
     hole=0.3  #to create a donut chart)
-fig = px.line(trend,x="Month",y="Sales",markers=True,title="Monthly Sales Trend")
+fig2 = px.line(trend,x="Month",y="Sales",markers=True,title="Monthly Sales Trend")
 
 #render the charts into the Streamlit Layout
 st.plotly_chart(fig, use_container_width=True)
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig2, use_container_width=True)
