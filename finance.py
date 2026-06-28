@@ -7,8 +7,8 @@ st.markdown("<h1 style='color:blue;'>Financial Analysis Dashboard</h1>", unsafe_
 df=pd.read_excel("Product-Sales-Region.xlsx")
 
 #Add calculated colums into the dataframe
-df["OrderDate"] = pd.to_datetime(df["OrderDate"])
-df["Month"]=df["OrderDate"].dt.month_name()
+df["OrderDate"] = pd.to_datetime(df["OrderDate"]).dt.month_name()
+
 
 #Exploratory Data Analysis
 st.write(df.head())
