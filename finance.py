@@ -12,7 +12,8 @@ df=pd.read_excel("Product-Sales-Region.xlsx")
 st.write(df.head())
 
 #Add calculated colums into the dataframe
-df["Month"]=df["OrderDate"].month()
+df["OrderDate"] = pd.to_datetime(df["OrderDate"])
+df["Month"]=df["OrderDate"].dt.month()
 #Create a Pie chart of Sales by Product Category
 fig = px.pie(df, names="Product", values="Quantity", title="Sales by Category",
     hole=0.3  #to create a donut chart
