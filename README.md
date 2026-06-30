@@ -1,8 +1,8 @@
 # Sales Analysis Dashboard
 
-🚀 **Live App:** https://paul-wambua-kimanzi.streamlit.app/
+🚀 **Live App:** https://paul--wambua-kimanzi.streamlit.app/
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://paul-wambua-kimanzi.streamlit.app/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://paul--wambua-kimanzi.streamlit.app/)
 
 ## Dashboard Preview
 
